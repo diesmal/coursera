@@ -10,7 +10,7 @@ def BWT(text):
         shifted_text = text[text_break:] + text[:text_break]
         shifted_texts.append(shifted_text)
 
-        shifted_texts.sort()
+    shifted_texts.sort()
 
     result = ''.join(shifted_text[text_length - 1] for shifted_text in shifted_texts)
 
